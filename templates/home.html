@@ -6,9 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/includesCSS/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/includesCSS/aboutUs.css' %}">
+    <link rel="stylesheet" href="{% static 'css/includesCSS/weDo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/includesCSS/goals.css' %}">
+    <link rel="stylesheet" href="{% static 'css/includesCSS/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'css/includesCSS/footer.css' %}">
+
     <title>Associação Comunitária dos Moradores da Ilha do Chié - ASCOMIC</title>
 </head>
 <body>
+    <main>
+
+        {% include 'includesHTML/navbar.html' %}
+
+        {% include 'includesHTML/aboutUs.html' %}
+
+        {% include 'includesHTML/weDo.html' %}
+        
+        {% include 'includesHTML/goals.html' %}
+
+        {% include 'includesHTML/contact.html' %}
+
+        {% include 'includesHTML/footer.html' %} 
+
+    </main>
     
+    <script type = "text/javascript" src = "{% static 'scripts/home.js' %}"></script>
+    <script type = "text/javascript" src = "{% static 'scripts/includesJS/navbar.js' %}"></script>
+    <script type = "text/javascript" src = "{% static 'scripts/includesJS/aboutUs.js' %}"></script>
+    <script type = "text/javascript" src = "{% static 'scripts/includesJS/weDo.js' %}"></script>
+    <script type = "text/javascript" src = "{% static 'scripts/includesJS/goals.js' %}"></script>
+    <script type = "text/javascript" src = "{% static 'scripts/includesJS/contact.js' %}"></script>
+    <script type = "text/javascript" src = "{% static 'scripts/includesJS/footer.js' %}"></script>
 </body>
 </html>
