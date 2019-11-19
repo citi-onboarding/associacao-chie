@@ -11,3 +11,23 @@ class QuemSomos (SingletonModel):
         
     def __str__(self):
         return "Quem Somos"
+
+class Metas (SingletonModel):
+
+    title_education = models.CharField(verbose_name="Educação - Meta", blank=True, null = True, max_length=100)
+    donation_link_education = models.CharField(verbose_name="Link para vaquinha - Educação", blank=True, null=True, max_length=300)
+
+    title_health = models.CharField(verbose_name="Saúde - Meta", blank=True, null=True, max_length=100)
+    donation_link_health = models.CharField(verbose_name="Link para vaquinha - Saúde", blank=True, null=True, max_length=300)
+
+    title_entrepreneur = models.CharField(verbose_name="População Empreendedora - Meta", blank=True, null=True, max_length=100)
+    donation_link_entrepreneur = models.CharField(verbose_name="Link para vaquinha - População Empreendedora", blank=True, null=True, max_length=300)
+
+    title_welfare = models.CharField(verbose_name="Bem-estar Social - Meta", blank=True, null=True, max_length=100)
+    donation_link_welfare = models.CharField(verbose_name="Link para vaquinha - Bem-estar social", blank=True, null=True, max_length=300)
+
+    class Meta:
+        verbose_name = 'Metas'
+
+    def __str__(self):
+        return "Metas"
