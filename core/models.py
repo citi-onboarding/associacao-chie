@@ -31,3 +31,15 @@ class Metas (SingletonModel):
 
     def __str__(self):
         return "Metas"
+
+class MarcoHistorico(models.Model):
+    date = models.DateTimeField(verbose_name='Data')
+    description = models.TextField(verbose_name='Descrição')
+    image = models.ImageField(verbose_name='Imagem', upload_to='timeline/')
+
+    class Meta:
+        verbose_name = 'Marco Histórico'
+        verbose_name_plural = 'Marcos Históricos'
+
+    def __str__(self):
+        return self.date
