@@ -7,3 +7,4 @@ from solo.admin import SingletonModelAdmin
 admin.site.register(QuemSomos, SingletonModelAdmin)
 admin.site.register(Metas, SingletonModelAdmin)
 admin.site.register(MarcoHistorico)
+admin.site.register(InformacoesContato)
