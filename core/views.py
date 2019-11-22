@@ -11,4 +11,5 @@ class HomeView(generic.TemplateView):
         context["quemsomos"] = QuemSomos.objects.first()
         context["metas"] = Metas.objects.first()
         context["marcoshistoricos"] = MarcoHistorico.objects.all()
+        context["informacoescontato"] = informacoescontato.objects.all()
         return context

@@ -43,3 +43,17 @@ class MarcoHistorico(models.Model):
 
     def __str__(self):
         return self.date
+
+class InformacoesContato(models.Model):
+    logo = models.ImageField(verbose_name='Logo', upload_to='info/')
+    address = models.CharField(verbose_name='Endereço')
+    email = models.EmailField(verbose_name='E-mail')
+    linkFace = models.URLField(verbose_name='Facebook')
+    linkInsta = models.URLField(verbose_name='Instagram')
+
+    class Meta:
+        verbose_name = 'Informação de Contato'
+        verbose_name_plural = 'Informações de Contato'
+
+    def __str__(self):
+        return "Informações de Contato"
