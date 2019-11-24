@@ -29,4 +29,3 @@ def sendEmail(request):
 
     mail = EmailMessage(subject, body, 'ascomicchie@gmail.com', ['ascomicchie@gmail.com'])
     mail.send()
-
