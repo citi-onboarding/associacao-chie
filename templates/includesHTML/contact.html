@@ -1,2 +1,34 @@
 <!-- Coloque aqui o código que implementa a seção "Contatos" -->
-<h1>testes2</h1>
+{% load static %}
+<form action="POST" id="contact-form">
+    
+    {% csrf_token %}
+
+    <label for = "input-physical"> Física </label>
+    <input type="radio" name="people" id="input-physical" required>
+    <label for = "input-legal"> Jurídica </label>
+    <input type="radio" name="people" id="input-legal" required>
+
+    <label for = "input-name"> Nome </label>
+    <input type="text" name="name" id="input-name" required>
+    
+    <label for = "input-cnpj"> CNPJ </label>
+    <input type="text" name="cnpj" id="input-cnpj" required>
+    
+    <label for = "input-email"> Email </label>
+    <input type="email" name="email" id="input-email" required>
+
+    <label for = "input-occupation"> Área de Atuação </label>
+    <input type="text" name="occupation" id="input-occupation" required>
+
+    <label for = "input-message"> Como pretende ajudar </label>
+    <input type="textarea" name="message" id="input-message" required>
+
+    <input type = "submit" value = "Enviar">
+</form>
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
