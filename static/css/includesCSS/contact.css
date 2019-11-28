@@ -1,1 +1,193 @@
-/* Coloque aqui o código responsável por estilizar "Contatos" */
+:root {
+    font-size: 14px;
+}
+body {
+    margin: 0;
+}
+.contact {
+    font-family: 'Roboto', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: blanchedalmond;
+}
+.contact-title {
+    margin-top: 4%;
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: center;
+}
+.contact-title h1::after {
+    display: block;
+    content: "";
+    background-color: blue;
+    height: 0.5rem;
+    width: 65%;
+} 
+.contact-content {
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+}
+
+#contact-content-form {
+    width: 30vw;
+    max-width: 600px;
+    padding: 50px 0 0 10vw;
+    margin-bottom: 50px;
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+}
+#contact-content-form h2 {
+    margin:0;
+    font-weight: normal;
+    font-size: 1.8rem;
+}
+
+#contact-content-form input{
+    padding: 5px;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    border: 2px solid brown
+}
+
+#contact-content-form textarea{
+    resize: none;
+    padding: 5px;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    border: 2px solid brown
+}
+.contact-content-form-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-content-form-buttons button {
+    cursor: pointer;
+    margin: 20px;
+    padding: 10px;
+    font-size: 1.6rem;
+    background-color: rgb(228, 85, 33);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 2px 2px 2px black;
+}
+button:active {
+    background-color: rgb(145, 59, 28);
+}
+
+#contact-content-form-reset {
+    display: none;
+}
+
+.contact-content-form-radio {
+    font-size: 1.8rem;
+    padding: 8px 0 8px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.contact-content-form-radio input{
+    margin-right: 40px;
+
+}
+.contact-content-location {
+    position: relative;
+    width: 50vw;
+    height: 35vw;
+    margin-bottom: 50px;
+}
+#contact-content-location-back {
+    background-color: coral;
+    width: 100%;
+    height: 85%;
+}
+#contact-content-location-map iframe{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 95%;
+    height: 93%;
+}
+
+@media only screen and (max-width: 1250px){
+
+    #contact-content-form {
+        max-width: none;
+        width: 80vw;
+        margin: 0 0 5% 0;
+        padding: 0;
+    }
+    .contact-content {
+        justify-content: space-around;
+    }
+    .contact-content-location {
+        width: 85vw;
+        height: 40vw;
+    }
+    #contact-content-location-back {
+        position: absolute;
+        right: 0;
+        width: 98%;
+        height: 80%;
+    }
+    #contact-content-location-map iframe{
+        width: 95%;
+        height: 95%;
+    }
+} 
+@media only screen and (max-width: 600px) {
+
+    .contact-title {
+        font-size: 1.4rem;
+        margin: 5% 0 0 0;
+    }
+    .contact-content-location {
+        width: 80vw;
+        height: 60vh;
+        max-height: 200px;
+    }
+    #contact-content-form {
+        font-size: 1.4rem;
+    }
+    #contact-content-form h2 {
+        font-size: 1.5rem;
+    }
+    .contact-content-form-radio {
+        font-size: 1.4rem;
+    }
+    #contact-content-form input{
+        font-size: 1.4rem;
+    }
+    
+    #contact-content-form textarea{    
+        font-size: 1.4rem;
+    }
+    .contact-content-form-buttons button {
+        padding: 8px;
+        font-size: 1.4rem;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
