@@ -1,28 +1,22 @@
-:root {
-    font-size: 14px;
-}
-body {
-    margin: 0;
-}
 .contact {
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Raleway', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: blanchedalmond;
+    background-color: #FEF2DF;
 }
 .contact-title {
-    margin-top: 4%;
-    font-size: 1.8rem;
+    margin: 5% 20px 3% 20px;
+    font-size: 2rem;
     width: 100%;
     text-align: center;
 }
 .contact-title h1::after {
     display: block;
     content: "";
-    background-color: blue;
-    height: 0.5rem;
+    background: transparent linear-gradient(90deg, #006EB3 0%, #2CCED9 100%) 0% 0% no-repeat padding-box;
+    height: 9px;
     width: 65%;
 } 
 .contact-content {
@@ -37,16 +31,17 @@ body {
 
 #contact-content-form {
     width: 30vw;
-    max-width: 600px;
-    padding: 50px 0 0 10vw;
+    max-width: 530px;
+    padding: 50px 0 0 13vw;
     margin-bottom: 50px;
     font-size: 1.7rem;
     display: flex;
     flex-direction: column;
 }
 #contact-content-form h2 {
+    color: #0F2633;
     margin:0;
-    font-weight: normal;
+    font-weight: medium;
     font-size: 1.8rem;
 }
 
@@ -55,8 +50,8 @@ body {
     font-size: 1.7rem;
     margin-bottom: 10px;
     border-radius: 10px;
-    background-color: blanchedalmond;
-    border: 2px solid brown
+    background-color: #FEF2DF;
+    border: 2px solid #FF4600
 }
 
 #contact-content-form textarea{
@@ -64,8 +59,8 @@ body {
     padding: 5px;
     font-size: 1.7rem;
     border-radius: 10px;
-    background-color: blanchedalmond;
-    border: 2px solid brown
+    background-color: #FEF2DF;
+    border: 2px solid #FF4600
 }
 .contact-content-form-buttons {
     display: flex;
@@ -76,15 +71,15 @@ body {
     cursor: pointer;
     margin: 20px;
     padding: 10px;
-    font-size: 1.6rem;
-    background-color: rgb(228, 85, 33);
-    color: white;
+    font-size: 1.7rem;
+    background-color: #FF4600;
+    color: #FEF2DF;
     border-radius: 8px;
     border: none;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 0px 5px 6px #464646;
 }
 button:active {
-    background-color: rgb(145, 59, 28);
+    background-color: rgb(199, 53, 0);
 }
 
 #contact-content-form-reset {
@@ -92,7 +87,7 @@ button:active {
 }
 
 .contact-content-form-radio {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     padding: 8px 0 8px;
     display: flex;
     flex-direction: row;
@@ -104,16 +99,18 @@ button:active {
 }
 .contact-content-location {
     position: relative;
-    width: 50vw;
-    height: 35vw;
+    width: 45vw;
+    height: 30vw;
     margin-bottom: 50px;
 }
-#contact-content-location-back {
-    background-color: coral;
+.contact-content-location #background{
+    position:absolute;
+    padding: 0;
     width: 100%;
     height: 85%;
+    background: transparent linear-gradient(90deg, #FF4600 0%, #FF9300 100%) 0% 0% no-repeat padding-box;
 }
-#contact-content-location-map iframe{
+.contact-content-location iframe{
     position: absolute;
     bottom: 0;
     right: 0;
@@ -136,13 +133,13 @@ button:active {
         width: 85vw;
         height: 40vw;
     }
-    #contact-content-location-back {
+    #contact-content-location #background{
         position: absolute;
         right: 0;
         width: 98%;
         height: 80%;
     }
-    #contact-content-location-map iframe{
+    #contact-content-location iframe{
         width: 95%;
         height: 95%;
     }
@@ -150,8 +147,8 @@ button:active {
 @media only screen and (max-width: 600px) {
 
     .contact-title {
-        font-size: 1.4rem;
-        margin: 5% 0 0 0;
+        font-size: 0.9rem;
+        margin: 9% 0 5% 0;
     }
     .contact-content-location {
         width: 80vw;
@@ -159,35 +156,23 @@ button:active {
         max-height: 200px;
     }
     #contact-content-form {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     #contact-content-form h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .contact-content-form-radio {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     #contact-content-form input{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     
     #contact-content-form textarea{    
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     .contact-content-form-buttons button {
         padding: 8px;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
