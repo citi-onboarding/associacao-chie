@@ -1,2 +1,85 @@
 <!-- Coloque aqui o código que implementa a seção "Barra de navegação" -->
-<h1>testes5</h1>
+{% load static %}
+
+<!-- navbar desktop -->
+<div class = "navbar-desktop" id="navbar-desktop">
+
+
+    <div class = "navbar-logo-desktop">
+            {% if informacoescontato.logo|length > 0 %}
+                 <a href="#teste1">
+                    <img src = "{{informacoescontato.logo.url}}" alt = "logo ASCOMIC">
+                 </a>
+             {% endif %}
+    </div>
+
+    <ul class="navbar-items-desktop">
+        <li class = "desktop-item">
+            <div class="markingSection" id="markingSection1"></div>
+            <a href="#teste1" > Quem somos </a>
+        </li>
+        <li class = "desktop-item">
+            <div class="markingSection" id="markingSection2"></div>
+            <a href="#teste2" > Linha do tempo </a>
+        </li>
+        <li class = "desktop-item">
+            <div class="markingSection" id="markingSection3"></div>
+            <a href="#teste3" > Metas </a>
+        </li>
+        <li class = "desktop-item">
+            <div class="markingSection" id="markingSection4"></div>
+            <a href="#contact" > Contato </a>
+        </li>
+    </ul>
+</div>
+
+<!-- Menu mobile -->
+
+<div class = "navbar-menu-mobile">
+
+        {% if informacoescontato.logo|length > 0 %}
+            <a href="#teste1">
+                <img src = "{{informacoescontato.logo.url}}" alt = "logo ASCOMIC" id="navbar-logo-mobile">
+            </a>
+        {% endif %}
+    <img src="../../static/images/Menu (M).svg" alt="" onclick="openMenu()" id="navbar-hamburguer-mobile" >
+
+</div>
+
+<!-- Sidebar mobile -->
+
+<div class = "sidebar-mobile" id="sidebar-mobile">
+
+    <div id = "sidebar-button-close">
+        <img src="../../static/images/Saída da sidebar (M).svg" alt="" onclick="closeMenu()">
+    </div>
+    
+    <ul class = "sidebar-items-mobile">
+
+        <li class="mobile-item"><a href="#teste1" onclick="closeMenu()"> Quem somos </a></li>
+        <li class="mobile-item"><a href="#teste2" onclick="closeMenu()"> Nossa História </a></li>
+        <li class="mobile-item"><a href="#teste3" onclick="closeMenu()"> Metas </a></li>
+        <li class="mobile-item"><a href="#contact" onclick="closeMenu()"> Contatos </a></li>
+    </ul>
+
+    <div class = "sidebar-social-networks">
+
+        {% if informacoescontato.linkInsta|length > 0 %}
+            <a id = "instagram-link" href="{{informacoescontato.linkInsta}}" target="_blank"></a>
+            <img src="../../static/images/instagram footer (D).svg" alt="Instagram" onclick="openInsta()">
+        {% endif %}
+
+        {% if informacoescontato.linkFace|length > 0 %}
+            <a id = "facebook-link" href="{{informacoescontato.linkFace}}" target="_blank"></a>
+            <img src="../../static/images/facebook footer (D).svg" alt="Facebook" onclick="openFace()">
+        {% endif %}
+
+    </div>
+
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
