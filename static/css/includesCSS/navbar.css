@@ -67,6 +67,7 @@ body {
 #navbar .desktop-item a { 
     color: #FEE5DB;
     text-decoration: none;
+    margin: auto;
 }
 
 /* navbar para mobile ou dispositivos com largura menor que 900px */
