@@ -7,7 +7,7 @@
 
     <div class = "navbar-logo-desktop">
             {% if informacoescontato.logo|length > 0 %}
-                 <a href="#teste1">
+                 <a href="#aboutUs">
                     <img src = "{{informacoescontato.logo.url}}" alt = "logo ASCOMIC">
                  </a>
              {% endif %}
@@ -16,15 +16,15 @@
     <ul class="navbar-items-desktop">
         <li class = "desktop-item">
             <div class="markingSection" id="markingSection1"></div>
-            <a href="#teste1" > Quem somos </a>
+            <a href="#aboutUs" > Quem somos </a>
         </li>
         <li class = "desktop-item">
             <div class="markingSection" id="markingSection2"></div>
-            <a href="#teste2" > Linha do tempo </a>
+            <a href="#timeline" > Linha do tempo </a>
         </li>
         <li class = "desktop-item">
             <div class="markingSection" id="markingSection3"></div>
-            <a href="#teste3" > Metas </a>
+            <a href="#goals" > Metas </a>
         </li>
         <li class = "desktop-item">
             <div class="markingSection" id="markingSection4"></div>
@@ -38,7 +38,7 @@
 <div class = "navbar-menu-mobile">
 
         {% if informacoescontato.logo|length > 0 %}
-            <a href="#teste1">
+            <a href="#aboutUs">
                 <img src = "{{informacoescontato.logo.url}}" alt = "logo ASCOMIC" id="navbar-logo-mobile">
             </a>
         {% endif %}
@@ -56,9 +56,9 @@
     
     <ul class = "sidebar-items-mobile">
 
-        <li class="mobile-item"><a href="#teste1" onclick="closeMenu()"> Quem somos </a></li>
-        <li class="mobile-item"><a href="#teste2" onclick="closeMenu()"> Nossa História </a></li>
-        <li class="mobile-item"><a href="#teste3" onclick="closeMenu()"> Metas </a></li>
+        <li class="mobile-item"><a href="#aboutUs" onclick="closeMenu()"> Quem somos </a></li>
+        <li class="mobile-item"><a href="#timeline" onclick="closeMenu()"> Nossa História </a></li>
+        <li class="mobile-item"><a href="#goals" onclick="closeMenu()"> Metas </a></li>
         <li class="mobile-item"><a href="#contact" onclick="closeMenu()"> Contatos </a></li>
     </ul>
 

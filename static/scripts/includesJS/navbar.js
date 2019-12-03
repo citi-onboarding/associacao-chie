@@ -17,8 +17,8 @@ const openFace = () => {
 let nav = document.querySelector('#navbar');
 let heightNavbar = nav.offsetHeight;
 
-let heightSecondSection = $('#teste2').offset().top - heightNavbar;
-let heightThirdSection = $('#teste3').offset().top - heightNavbar;
+let heightSecondSection = $('#timeline').offset().top - heightNavbar;
+let heightThirdSection = $('#goals').offset().top - heightNavbar;
 let heightFourthSection = $('#contact').offset().top - heightNavbar;
 
 const paint = (section) => {
