@@ -42,11 +42,11 @@ class MarcoHistorico(models.Model):
         verbose_name_plural = 'Marcos Históricos'
 
     def __str__(self):
-        return self.date
+        return "Marco histórico"
 
-class InformacoesContato(models.Model):
+class InformacoesContato(SingletonModel):
     logo = models.ImageField(verbose_name='Logo', upload_to='info/')
-    address = models.CharField(verbose_name='Endereço')
+    address = models.CharField(verbose_name='Endereço',max_length=200)
     email = models.EmailField(verbose_name='E-mail')
     linkFace = models.URLField(verbose_name='Facebook')
     linkInsta = models.URLField(verbose_name='Instagram')

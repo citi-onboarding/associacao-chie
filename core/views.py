@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
-from .models import QuemSomos, Metas, MarcoHistorico
+from .models import QuemSomos, Metas, MarcoHistorico, InformacoesContato
 from django.core.mail import EmailMessage
 
 # Create your views here.
@@ -12,7 +12,7 @@ class HomeView(generic.TemplateView):
         context["quemsomos"] = QuemSomos.objects.first()
         context["metas"] = Metas.objects.first()
         context["marcoshistoricos"] = MarcoHistorico.objects.all()
-        context["informacoescontato"] = informacoescontato.objects.all()
+        context["informacoescontato"] = InformacoesContato.objects.first()
         return context
 
 
