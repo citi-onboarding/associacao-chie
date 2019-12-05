@@ -1,2 +1,70 @@
-<!-- Coloque aqui o código que implementa a seção "O que queremos fazer" -->
-<h1>testes4</h1>
+
+
+    <div class = "goals-title"> <h1>Metas</h1></div>
+
+    <div class = "goals-content">
+
+        <div class = "goal">
+            <div class = "goal-title"> <h2>Saúde</h2> </div>
+            <div class = "goal-icon"> <img src="../../static/images/saúde  (D).svg" alt=""> </div>
+            <div class = "goal-description">
+                    {% if metas.title_health|length > 0 %}
+                        <p>{{ metas.title_health }}</p>
+                    {% endif %}
+                </div>
+            <div class = "goal-donation-button">
+                {% if metas.donation_link_health|length > 0 %}
+                    <a href="{{ metas.donation_link_health }}" target="_blank"> DOE</a>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class = "goal">
+            <div class = "goal-title"> <h2>Educação</h2> </div>
+            <div class = "goal-icon"> <img src="../../static/images/educação (D).svg" alt=""> </div>
+            <div class = "goal-description">
+                    {% if metas.title_education|length > 0 %}
+                        <p>{{ metas.title_education }}</p>
+                    {% endif %}
+                </div>
+            <div class = "goal-donation-button">
+                {% if metas.donation_link_education|length > 0 %}
+                    <a href="{{ metas.donation_link_education }}" target="_blank"> DOE </a>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class = "goal">
+            <div class = "goal-title"> <h2 id = "fix">População empreendedora</h2> </div>
+            <div class = "goal-icon"> <img src="../../static/images/p. empreendedora (D).svg" alt=""> </div>
+            <div class = "goal-description">
+                    {% if metas.title_entrepreneur|length > 0 %}
+                        <p>{{ metas.title_entrepreneur }}</p>
+                    {% endif %}
+                </div>
+            <div class = "goal-donation-button">
+                {% if metas.donation_link_entrepreneur|length > 0 %}
+                    <a href="{{ metas.donation_link_entrepreneur }}" target="_blank"> DOE </a>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class = "goal">
+            <div class = "goal-title"> <h2>Bem-estar social</h2> </div>
+            <div class = "goal-icon"> <img src="../../static/images/bem-estar social (D).svg" alt=""> </div>
+            <div class = "goal-description">
+                    {% if metas.title_welfare|length > 0 %}
+                        <p>{{ metas.title_welfare }}</p>
+                    {% endif %}
+                </div>
+            <div class = "goal-donation-button">
+                {% if metas.donation_link_welfare|length > 0 %}
+                    <a href="{{ metas.donation_link_welfare }}" target="_blank"> DOE </a>
+                {% endif %}
+            </div>
+        </div>
+
+    </div>
+
+
+    
