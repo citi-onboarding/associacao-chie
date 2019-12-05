@@ -5,12 +5,14 @@
     align-items: center;
     justify-content: center;
     background-color: #FEF2DF;
+    padding-top: 7vh;
+
 }
 .contact-title {
-    margin: 5% 20px 3% 20px;
     font-size: 2rem;
     width: 100%;
     text-align: center;
+    margin-bottom: 4vh;
 }
 .contact-title h1::after {
     display: block;
@@ -34,7 +36,7 @@
     max-width: 530px;
     padding: 50px 0 0 13vw;
     margin-bottom: 50px;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
 }
@@ -42,12 +44,12 @@
     color: #0F2633;
     margin:0;
     font-weight: medium;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 #contact-content-form input{
     padding: 5px;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
     border-radius: 10px;
     background-color: #FEF2DF;
@@ -57,7 +59,7 @@
 #contact-content-form textarea{
     resize: none;
     padding: 5px;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     border-radius: 10px;
     background-color: #FEF2DF;
     border: 2px solid #FF4600
@@ -69,12 +71,13 @@
 
 .contact-content-form-buttons button {
     cursor: pointer;
-    margin: 20px;
-    padding: 10px;
-    font-size: 1.7rem;
+    margin: 20px;  
+    padding: 7px 10px;
+    font-size: 1.6rem;
     background-color: #FF4600;
     color: #FEF2DF;
     border-radius: 8px;
+    font-weight: 500;
     border: none;
     box-shadow: 0px 5px 6px #464646;
 }
@@ -87,7 +90,7 @@ button:active {
 }
 
 .contact-content-form-radio {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding: 8px 0 8px;
     display: flex;
     flex-direction: row;
@@ -144,7 +147,11 @@ button:active {
         height: 95%;
     }
 } 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 760px) {
+
+    .contact {
+        padding: 0;
+    }
 
     .contact-title {
         font-size: 0.9rem;
@@ -159,7 +166,7 @@ button:active {
         font-size: 1.3rem;
     }
     #contact-content-form h2 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     .contact-content-form-radio {
         font-size: 1.3rem;
@@ -176,3 +183,29 @@ button:active {
         font-size: 1.3rem;
     }
   }
+
+  @media only screen and (max-width: 550px) { 
+
+    #contact-content-form {
+        font-size: 0.9rem;
+    }
+    #contact-content-form h2 {
+        font-size: 0.9rem;
+    }
+    .contact-content-form-radio {
+        font-size: 0.9rem;
+    }
+    #contact-content-form input{
+        font-size: 0.9rem;
+    }
+    
+    #contact-content-form textarea{    
+        font-size: 0.9rem;
+    }
+    .contact-content-form-buttons button {
+
+        font-size: 0.9rem;
+    }
+  }
+
+
