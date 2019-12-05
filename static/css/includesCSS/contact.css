@@ -1,1 +1,211 @@
-/* Coloque aqui o código responsável por estilizar "Contatos" */
+.contact {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FEF2DF;
+    padding-top: 7vh;
+
+}
+.contact-title {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4vh;
+}
+.contact-title h1::after {
+    display: block;
+    content: "";
+    background: transparent linear-gradient(90deg, #006EB3 0%, #2CCED9 100%) 0% 0% no-repeat padding-box;
+    height: 9px;
+    width: 65%;
+} 
+.contact-content {
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+}
+
+#contact-content-form {
+    width: 30vw;
+    max-width: 530px;
+    padding: 50px 0 0 13vw;
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+#contact-content-form h2 {
+    color: #0F2633;
+    margin:0;
+    font-weight: medium;
+    font-size: 1.6rem;
+}
+
+#contact-content-form input{
+    padding: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #FEF2DF;
+    border: 2px solid #FF4600
+}
+
+#contact-content-form textarea{
+    resize: none;
+    padding: 5px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: #FEF2DF;
+    border: 2px solid #FF4600
+}
+.contact-content-form-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-content-form-buttons button {
+    cursor: pointer;
+    margin: 20px;  
+    padding: 7px 10px;
+    font-size: 1.6rem;
+    background-color: #FF4600;
+    color: #FEF2DF;
+    border-radius: 8px;
+    font-weight: 500;
+    border: none;
+    box-shadow: 0px 5px 6px #464646;
+}
+button:active {
+    background-color: rgb(199, 53, 0);
+}
+
+#contact-content-form-reset {
+    display: none;
+}
+
+.contact-content-form-radio {
+    font-size: 1.5rem;
+    padding: 8px 0 8px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.contact-content-form-radio input{
+    margin-right: 40px;
+
+}
+.contact-content-location {
+    position: relative;
+    width: 45vw;
+    height: 30vw;
+    margin-bottom: 50px;
+}
+.contact-content-location #background{
+    position:absolute;
+    padding: 0;
+    width: 100%;
+    height: 85%;
+    background: transparent linear-gradient(90deg, #FF4600 0%, #FF9300 100%) 0% 0% no-repeat padding-box;
+}
+.contact-content-location iframe{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 95%;
+    height: 93%;
+}
+
+@media only screen and (max-width: 1250px){
+
+    #contact-content-form {
+        max-width: none;
+        width: 80vw;
+        margin: 0 0 5% 0;
+        padding: 0;
+    }
+    .contact-content {
+        justify-content: space-around;
+    }
+    .contact-content-location {
+        width: 85vw;
+        height: 40vw;
+    }
+    #contact-content-location #background{
+        position: absolute;
+        right: 0;
+        width: 98%;
+        height: 80%;
+    }
+    #contact-content-location iframe{
+        width: 95%;
+        height: 95%;
+    }
+} 
+@media only screen and (max-width: 760px) {
+
+    .contact {
+        padding: 0;
+    }
+
+    .contact-title {
+        font-size: 0.9rem;
+        margin: 9% 0 5% 0;
+    }
+    .contact-content-location {
+        width: 80vw;
+        height: 60vh;
+        max-height: 200px;
+    }
+    #contact-content-form {
+        font-size: 1.3rem;
+    }
+    #contact-content-form h2 {
+        font-size: 1.3rem;
+    }
+    .contact-content-form-radio {
+        font-size: 1.3rem;
+    }
+    #contact-content-form input{
+        font-size: 1.3rem;
+    }
+    
+    #contact-content-form textarea{    
+        font-size: 1.3rem;
+    }
+    .contact-content-form-buttons button {
+        padding: 8px;
+        font-size: 1.3rem;
+    }
+  }
+
+  @media only screen and (max-width: 550px) { 
+
+    #contact-content-form {
+        font-size: 0.9rem;
+    }
+    #contact-content-form h2 {
+        font-size: 0.9rem;
+    }
+    .contact-content-form-radio {
+        font-size: 0.9rem;
+    }
+    #contact-content-form input{
+        font-size: 0.9rem;
+    }
+    
+    #contact-content-form textarea{    
+        font-size: 0.9rem;
+    }
+    .contact-content-form-buttons button {
+
+        font-size: 0.9rem;
+    }
+  }
+
+

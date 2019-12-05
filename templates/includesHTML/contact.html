@@ -1,31 +1,57 @@
-<!-- Coloque aqui o código que implementa a seção "Contatos" -->
 {% load static %}
-<form action="POST" id="contact-form">
+
+<div class = "contact-title">
+    <h1>
+        Quero ser um colaborador
+    </h1>
+</div>
+
+<div class = "contact-content">
+
+    <form action="POST" id="contact-content-form" autocomplete="off">
     
-    {% csrf_token %}
+        {% csrf_token %}
 
-    <label for = "input-physical"> Física </label>
-    <input type="radio" name="people" id="input-physical" required>
-    <label for = "input-legal"> Jurídica </label>
-    <input type="radio" name="people" id="input-legal" required>
+        <h2>Pessoa *:</h2>
+        
+         <div class = "contact-content-form-radio" >
+            <label for = "input-physical"> Física </label>
+            <input type="radio" name="people" id="input-physical" class = "radio" required>
 
-    <label for = "input-name"> Nome </label>
-    <input type="text" name="name" id="input-name" required>
+            <label for = "input-legal"> Jurídica </label>
+            <input type="radio" name="people" id="input-legal" class = "radio" required>
+         </div> 
+        
+            <label for = "input-cnpj"> CNPJ * </label>
+            <input type="text" name="cnpj" id="input-cnpj" required>
     
-    <label for = "input-cnpj"> CNPJ </label>
-    <input type="text" name="cnpj" id="input-cnpj" required>
+            <label for = "input-name"> Nome * </label>
+            <input type="text" name="name" id="input-name" required>
+        
+            <label for = "input-email"> E-mail * </label>
+            <input type="email" name="email" id="input-email" required>
     
-    <label for = "input-email"> Email </label>
-    <input type="email" name="email" id="input-email" required>
+            <label for = "input-occupation"> Área de Atuação </label>
+            <input type="text" name="occupation" id="input-occupation">
+    
+            <label for = "input-message"> Como pretende ajudar * </label>
+            <textarea name="message" id="input-message" cols="30" rows="4"></textarea>
+        
+        <div class = "contact-content-form-buttons">
+            <button type="submit" > ENVIAR </button>
+            <input type = "reset" id = "contact-content-form-reset">
+        </div>
+        
+    </form>
+    
+    <div class = "contact-content-location">
 
-    <label for = "input-occupation"> Área de Atuação </label>
-    <input type="text" name="occupation" id="input-occupation" required>
+        <div id="background" ></div>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1975.317667681101!2d-34.8763877!3d-8.0364805!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18631a6308d9%3A0x92f1bdf0f04522c4!2sR.%20Catulo%20da%20Paix%C3%A3o%20Cearense%2C%20484%20-%20Campo%20Grande%2C%20Recife%20-%20PE%2C%2052031-030!5e0!3m2!1spt-BR!2sbr!4v1574654587602!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen=""></iframe> 
+            
+    </div>
+</div>
 
-    <label for = "input-message"> Como pretende ajudar </label>
-    <input type="textarea" name="message" id="input-message" required>
-
-    <input type = "submit" value = "Enviar">
-</form>
 
     <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
