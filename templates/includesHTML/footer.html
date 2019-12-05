@@ -1,2 +1,31 @@
-<!-- Coloque aqui o código que implementa a seção "Rodapé" -->
-<h1>testes3</h1>
+{% load static %}
+
+    <div class = "copyright">
+        <img src="../../static/images/créditos (D).svg" alt="logo CITi">
+        <p> &#169 2019 CITi - Todos os direitos reservados</p>
+    </div>
+
+    <div class = "address">
+        <img src="../../static/images/localização footer (D).svg" alt="">
+        {% if informacoescontato.address|length > 0 %}
+            <p> {{ informacoescontato.address }} </p>
+        {% endif %}
+    </div>
+
+    <div class = "socials">
+
+        {% if informacoescontato.email|length > 0 %}
+            <p> {{ informacoescontato.email }}</p>
+        {% endif %}
+
+        {% if informacoescontato.linkInsta|length > 0 %}
+            <a id = "instagram-link" href="{{informacoescontato.linkInsta}}" target="_blank"></a>
+            <img src="../../static/images/instagram footer (D).svg" alt="Instagram" onclick="openInsta()">
+        {% endif %}
+
+        {% if informacoescontato.linkFace|length > 0 %}
+            <a id = "facebook-link" href="{{informacoescontato.linkFace}}" target="_blank"></a>
+            <img src="../../static/images/facebook footer (D).svg" alt="Facebook" onclick="openFace()">
+        {% endif %}
+    </div>
+
