@@ -1,1 +1,158 @@
-/* Coloque aqui o código responsável por estilizar "O que queremos fazer" */
+:root {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    background-color: #FEF2DF;
+}
+
+#goals {
+    font-family: 'Raleway', sans-serif;
+    background-color: #FEEBCB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 13vh 0 13vh 0;
+    clip-path: polygon(0 0, 100% 8%, 100% 92%, 0 100%);
+}
+
+#goals .goals-title {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+#goals .goals-title h1::after {
+    display: block;
+    position: absolute;
+    right: 0;
+    content: "";
+    background: transparent linear-gradient(90deg,#2CCED9 0%, #006EB3 100%) 0% 0% no-repeat padding-box;
+    height: 9px;
+    width: 55%;
+} 
+
+#goals .goals-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+#goals .goal {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   text-align: center;
+   margin: 30px;
+   width: 300px;
+   font-size: 1.5rem;
+}
+
+#goals .goal-title{
+    align-items: center;
+}
+
+#fix{
+    margin: 0;
+    margin-bottom: 45px;
+}
+
+#goals .goal-icon img{
+    width: 150px;
+    height: 150px;
+}
+
+#goals .goal-description {
+    margin: 15px;
+}
+
+#goals .goal-donation-button {
+    cursor: pointer;
+    background-color: #FF4600;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 5px 6px #464646;
+    padding: 5px 20px;
+
+}
+
+#goals .goal-donation-button a {
+    text-decoration: none;
+    color: #FEF2DF;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 760px) {
+
+    #goals{
+        padding: 10vh 0 10vh 0;
+    }
+    
+    #goals .goal{
+        flex-direction: row;
+        margin: 0 30px 50px 30px;
+        justify-content: space-evenly;
+        width: 90%;
+        font-size: 1.3rem;
+    }
+
+    #goals .goals-title {
+        font-size: 1.1rem;
+        margin: 9% 0 5% 0;
+    }
+
+    #goals .goal-title {
+        display: none;
+    }
+
+    #goals .goal img{
+        width: 80px;
+        height: 80px;
+    }
+
+    #goals .goal-description{
+        width: 250px;
+        margin: 0;
+    }
+    #goals .goal-description p{
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    
+    #goals .goal{
+        font-size: 0.9rem;
+    }
+
+    #goals .goals-title {
+        font-size: 1rem;
+    }
+
+    #goals .goal-title {
+        display: none;
+    }
+
+    #goals .goal img{
+        width: 60px;
+        height: 60px;
+    }
+
+    #goals .goal-description{
+        width: 200px;
+        
+    }
+    #goals .goal-description p{
+        font-size: 0.8rem;
+        margin: 0 10px;
+    }
+}
+
+
+
