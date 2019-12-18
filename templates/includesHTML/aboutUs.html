@@ -1,2 +1,18 @@
-<!-- Coloque aqui o código que implementa a seção "Quem somos" -->
-<h1>testes1</h1>
+
+    <div class="image-img">
+        {% if quemsomos.image|length > 0 %}
+            <img src="{{quemsomos.image.url}}" alt="Banner" class="image-banner">
+        {% endif %}
+    </div>
+    <div class="banner">
+        <div class="title-banner">
+            <p>Associação Comunitária dos Moradores da Ilha do Chié - ASCOMIC</p>
+        </div>
+        <div class="description-banner">
+            <h2> Quem Somos?</h2>
+
+            {% if quemsomos.description|length > 0 %}
+                <p>{{ quemsomos.description }}</p>
+            {% endif %}
+        </div>
+    </div>
