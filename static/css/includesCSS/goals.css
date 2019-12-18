@@ -14,8 +14,8 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 13vh 0 13vh 0;
-    clip-path: polygon(0 0, 100% 8%, 100% 92%, 0 100%);
+    padding: 11vh 0 11vh 0;
+    clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
 }
 
 #goals .goals-title {

@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     background-color: #FEF2DF;
-    padding-top: 7vh;
+    padding-top: 11vh;
 
 }
 .contact-title {
@@ -158,9 +158,9 @@ button:active {
         margin: 9% 0 5% 0;
     }
     .contact-content-location {
-        width: 80vw;
-        height: 60vh;
-        max-height: 200px;
+        width: 90vw;
+        height: 35vh;
+
     }
     #contact-content-form {
         font-size: 1.3rem;
