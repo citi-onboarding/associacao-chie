@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="{% static 'css/includesCSS/goals.css' %}">
     <link rel="stylesheet" href="{% static 'css/includesCSS/contact.css' %}">
     <link rel="stylesheet" href="{% static 'css/includesCSS/footer.css' %}">
+    <!-- Slick - CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" />
+        <link rel="stylesheet" href="{% static 'css/includesCSS/timeline.css' %}">
 
     <title>Associação Comunitária dos Moradores da Ilha do Chié - ASCOMIC</title>
 </head>
@@ -45,12 +51,26 @@
 
     </main>
     
-    <script type = "text/javascript" src = "{% static 'scripts/home.js' %}"></script>
-    <script type = "text/javascript" src = "{% static 'scripts/includesJS/navbar.js' %}"></script>
-    <script type = "text/javascript" src = "{% static 'scripts/includesJS/aboutUs.js' %}"></script>
-    <script type = "text/javascript" src = "{% static 'scripts/includesJS/timeline.js' %}"></script>
-    <script type = "text/javascript" src = "{% static 'scripts/includesJS/goals.js' %}"></script>
-    <script type = "text/javascript" src = "{% static 'scripts/includesJS/contact.js' %}"></script>
-    <script type = "text/javascript" src = "{% static 'scripts/includesJS/footer.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+            $('#carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                cssEase: 'linear',
+                prevArrow : $('#prev'),
+                nextArrow: $('#next'),
+            });
+        });
+    </script>
+        <script type = "text/javascript" src = "{% static 'scripts/home.js' %}"></script>
+        <script type = "text/javascript" src = "{% static 'scripts/includesJS/navbar.js' %}"></script>
+        <script type = "text/javascript" src = "{% static 'scripts/includesJS/aboutUs.js' %}"></script>
+        <script type = "text/javascript" src = "{% static 'scripts/includesJS/timeline.js' %}"></script>
+        <script type = "text/javascript" src = "{% static 'scripts/includesJS/goals.js' %}"></script>
+        <script type = "text/javascript" src = "{% static 'scripts/includesJS/contact.js' %}"></script>
+        <script type = "text/javascript" src = "{% static 'scripts/includesJS/footer.js' %}"></script>
 </body>
 </html>
