@@ -32,7 +32,7 @@ const paint = (section) => {
 }
 
 document.addEventListener('scroll', () => {
-    if($(document).scrollTop() > heightSecondSection) {
+    if($(document).scrollTop() > 50) {
         document.getElementById('navbar').style.background = '#006EB3';
     } else {
         document.getElementById('navbar').style.background = 'none';
