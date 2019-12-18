@@ -1,0 +1,11 @@
+<svg id="timeline_D_" data-name="timeline (D)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1767.383" height="100" viewBox="0 0 1767.383 100">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.009" y1="0.5" x2="1.089" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#006eb3"/>
+      <stop offset="1" stop-color="#aaa"/>
+    </linearGradient>
+  </defs>
+  <path id="Caminho_102" data-name="Caminho 102" d="M0,0H1749.417V15H0Z" transform="translate(8.941 42)" fill="url(#linear-gradient)"/>
+  <path id="Icon_material-navigate-next" data-name="Icon material-navigate-next" d="M25,9,12.885,20.75,52.251,59,12.885,97.25,25,109,76.576,59Z" transform="translate(1690.807 -9)" fill="#006eb3"/>
+  <path id="Icon_material-navigate-next-2" data-name="Icon material-navigate-next" d="M64.457,9,76.576,20.75,37.21,59,76.576,97.25,64.457,109,12.885,59Z" transform="translate(-12.885 -9)" fill="#006eb3"/>
+</svg>
